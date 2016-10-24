@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en"><html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+   <meta name="Author" content="Krzysztof Barteczko">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (OS/2; U) [Netscape]"><title>Krzysztof Barteczko, WPR - cwicenia z2</title></head><body>
+
+<center><span style="text-transform: capitalize; font-variant: small-caps"><b>Zadania do wykonania</b></span><hr></center>
+<p><b>ZADANIE-1. Generator liczb pseudolosowych (max 6 punktów)</b><br>
+<br>
+Napisać program symulujący pewien rodzaj gry w kości. <br>
+W grze bierze udział 2 graczy. Każdy z nich dysponuje zadaną sumą pieniędzy 
+przeznaczoną na grę. <br>
+Przed każdą rundą gracze &quot;stawiają&quot; jakąś sumę pieniędzy (wybraną w sposób 
+losowy z przedziału 1 - max możliwa). Pulę zgarnia gracz, który wyrzuci większą 
+liczbę oczek. <br>
+Gra jest kontynuowana do chwili, gdy któremuś z graczy zabraknie pieniędzy lub 
+gdy czas symulacji przekroczy zadaną liczbę sekund.<br>
+<br>
+Przed zakończeniem programu należy wyprowadzić na konsolę &quot;historię&quot;&nbsp; gry.<br>
+<br>
+Np. jeśli gracze dysponują kwotami 100 i 100 i obstawili 10 i 20 w 1 rundzie 
+oraz 20 i 80 w drugiej, to historia gry wygląda następująco<br>
+<br>
+Gracz A - kwota inicjalna 100<br>
+Gracz B - kwota inicjalna 100<br>
+<br>
+Runda &nbsp;Stawka GraczA-oczka &nbsp;GraczB-oczka &nbsp;GraczA-kwota GraczB-kwota &nbsp;<br>
+1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10+20 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 120 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 80<br>
+2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;20+80 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0<br>
+&nbsp;</p>
+<hr width="100%" SIZE="2"><b><br>
+ZADANIE-2. Operacje na bitach (4 punkty)</b><br>
+<br>
+Napisać metodę, która zwraca tablicę pozycji na których znajdują się bity 
+jedynkowe w liczbie typu int przekazanej jako argument metody. <br>
+&nbsp;<hr width="100%" SIZE="2">&nbsp;<br>
+<b>ZADANIE-3. Sortowanie (6 punktów)<br>
+<br>
+</b>Stworzyć klasę <b>Input ze </b>statycznymi metodami <b>getIntArray()</b> 
+oraz <b>getDoubleArray()</b>, które - odpowiednio - zwracają tablice liczb 
+całkowitych i rzeczywistych<b>,</b> podawanych przez użytkownika jako ciagi 
+znaków rozdzielonych spacjami w dialogu wejściowym.<br>
+<br>
+Zapewnić możliwość poprawienia danych w przypadku błędu przy wprowadzaniu 
+danych.<br>
+<br>
+Pokazać działanie klasy w programie, który:<br>
+pozwala na wprowadzenie dwóch tablic: liczb całkowitych i liczb rzeczywistych, 
+po czym wyprowadza obie tablice <b>posortowane</b> odpowiednio w porządku <b>
+malejącym i rosnącym.</b><p><b>Rozważyć inną wersję programu gdzie dane do 
+tablic pobierane są z pliku tekstowego.</b></p>
+<hr><b><br>
+ZADANIE- 4 (max. 8 punktów)</b> <br>
+<br>
+Stworzyć klasę <b>MonthInYear</b>, której obiekt reprezentują wybrany miesiąc w 
+wybranym roku &nbsp;i dostarczyć w niej metodę getDays() zwracającą liczbę dni 
+miesiąca w roku. <br>
+Klasa ma działać dla <b>dowolnych</b> lat i miesięcy kalendarza gregoriańskiego 
+i juliańskiego (poprzedzającego gregoriański).<br>
+<br>
+Możliwy przykład użycia (jednocześnie wyjaśnia w jaki sposob obiekty klasy mają 
+być tworzone i jak podawać dane dotyczące lat i miesięcy) :<br>
+<br>
+int year = 2002;<br>
+String month = &quot;styczeń&quot;;<br>
+MonthInYear monthObject = new MonthInYear(month, year);<br>
+int ldni = &nbsp;.... // tu wywołanie metody getDays()<br>
+System.out.println(&quot;Miesiąc &quot; + month + &quot; w roku &quot; + year + &quot; zawiera &quot; + ldni);<br>
+<br>
+Oprócz metody <b>getDays()</b> dostarczyć w klasie metod:<ul>
+	<li>pobierania nazwy miesiąca getMonthName() </li>
+	<li>uzyskiwania rzymskiego numeru miesiąca (I, II, III, IV itd.) 
+	getMonthSymbol()
+	</li>
+	<li>uzyskiwania numeru miesiąca (1,2,3 ... 12) &nbsp;getMonthNumber()
+	</li>
+	<li>stwierdzania czy rok jest przestępny isLeapYear() </li>
+</ul>
+<br>
+W klasie testującej TestMonth:<br>
+&nbsp;<ul>
+	<li>zdefiniować metodę <b>createMonthInYear()</b>, która zwraca referencję 
+	do obiektu klasy MonthInYear, utworzonego na podstawie podanych przez 
+	użytkownika w dialogach wejściowym miesiąca i roku.
+	</li>
+	<li>zdefiniować metodę <b>showInfo(MonthInYear)</b>, która podaje - w 
+	okienku komunikatów - informacje o przekazanym jako argument miesiącu w 
+	postaci: 
+	</li>
+</ul>
+miesiąc rzymski . rok (np. XII.2002)<br>
+nazwa miesiąca rok <br>
+który miesiąc roku<br>
++ dodatkowy komunikat jeżeli rok jest przestępny.<br>
+<br>
+Powinno to wyglądac tak:<br>
+<br>
+&nbsp;---- jeżeli podano właściwe dane i rok nie jest przestępny<img height="130" alt="rys" src="rys1.jpg" width="262" align="left" border="1"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br>
+<br>
+<br>
+---- jeżeli podano własciwe dane i rok jest przestępny<img height="168" alt="rys" src="rys2.jpg" width="262" align="left" border="1">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;</p>
+<p>--- jeżeli podano niewłaściwe dane (np. stuczeń, zamiast styczeń) - komunikat 
+o błędzie (też w okienku dialogowym). <br>
+<br>
+Użyć metod <b>createMonth()</b> i <b>showInfo() </b>w pętli iteracyjnej 
+kończącej się, gdy użytkownik zrezygnuje z wprowadzania danych.<br>
+<br>
+<b>Informacja o latach przestępnych:</b><br>
+Rok przestępny ma 366 dni i luty w takim roku ma dni 29.<br>
+Rok jest przestępny, gdy dzieli się przez 4.<br>
+Ale -&nbsp; od momentu wprowadzenia kalendarza gregoriańskiego (październik 1582) - 
+rok nie jest przestępny, jeśli dzieli się przez 100. Ale - mimo wszystko - w 
+kalendarzu gregoriańskim lata, dzielące się przez 100, będą przestępne, jeśli 
+dzielą się przez 400.</p>
+<hr>
+<p><b>ZADANIE- 5 (max. 6 punktów)</b> </p>
+<p class="MsoNormal">Zdefiniuj klasę <b>Sequence</b> a w niej zdefinuj wersje:
+</p>
+<ul>
+	<li>
+	<p class="MsoNormal">rekurencyjną, </li>
+	<li>
+	<p class="MsoNormal">iteracyjną </li>
+	<li>
+	<p class="MsoNormal">obliczeniową&nbsp;(wykorzystujacą wzór jawny na a(n) )</li>
+</ul>
+<p class="MsoNormal">metody <b><span style="color:maroon">int sequence(int n)</span></b> 
+dostarczającą n-ty wyraz ciągu określonego rekurencyjnie:&nbsp;&nbsp; </p>
+<p class="MsoNormal">a(0) = 1, a(1) = -3 ;&nbsp; a(n) = 6<span style="font-family: Symbol">&middot;</span>a(n-1) 
+- 9<span style="font-family: Symbol">&middot;</span>a(n-2)&nbsp; dla&nbsp; n&gt;=2</p>
+<p class="MsoNormal">&nbsp;i porównaj czasy realizacji każdej z nich dla dużej 
+liczby n.&nbsp;&nbsp; </p>
+<span style="font-family: Times New Roman"><b>Wskazówka</b>: Do pomiaru czasu 
+przebiegu fragmentu programu wykorzystać funkcję <b><span style="color:maroon">
+System.currentTimeMillis();</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;</span><hr><hr>
+<p>
+<br>
+</p>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html; charset=ISO-8859-2"><meta name="author" content="Krzysztof Barteczko"><title>Zadania do wykonania</title></head><body><br>
+<div align="Center">
+<h2>Zadania do wykonania</h2>
+</div>
+<hr width="100%" size="2"><br><b>Zad. 1 Pracownicy (4 p.)</b><br>
+<br>
+Stworzyć klasę <b>Employee</b> (pracownik), opisującą wspólne atrrybuty pracowników:<br>
+- imię,<br>
+- nazwisko,<br>
+- wiek,<br>
+- pensja.<br>
+<br>
+oraz zawierającą odpowiednie metody, które pozwolą w programie testującym dla kilku pracowników:<br>
+- uzyskać opis pracownika,<br>
+- zmienić pensję o podany procent,<br><br>
+<HR>
+<P>
+<br><b>
+Zad. 2 Pracownicy II (4 p.)</b><br>
+<br>
+Użyć klasy z poprzedniego zadania&nbsp; w innej klasie, w której dostarczymy:<br>
+<br>
+metody definiowania danych o  pracownikach: <br><b>
+Employee defEmp(String msg)</b>, <br>
+która w dialogu wejściowym pyta użytkownika o dane pracownika (argument msg
+jest wspólną częścią komunikatu wyświetlanego w oknie dialogowym przy pytaiu
+o różne dane dla pracownika, może to być np. "Pracownik 1"),  tworzy obiekt,
+reprezentujący wprowadzone dane o pracowniku i zwraca referencję do niego.<br>
+<br>
+metody <b>showInfo(Employee)</b>, która wyświetla w dialogu komunikatów dane o podanym jako argument pracowniku<br>
+<br>
+metody <b>changeSalary(Employee)</b>, która pyta o procent o jaki chcemy zmienić
+pensję podanego jako argument pracownika i zmienia tę pensję..<br>
+<br>
+W metodach zadbać o obsługę błędów.<BR>
+<br>
+Przetestować te metody na przykładzie wprowadzenia danych dla 3 pracowników,
+pokazania tych danych, zmiany pensji i pokazania zmienionych danych.<br>
+
+</P>
+<hr width="100%" size="2"><br>
+<b>Zadanie 3  - Pudełka (max. 4 punkty)</b>
+<p>Zdefiniować klasę <b>Box</b>, której obiekty będą stanowić pudełka o zadanych
+rozmiarach (szerokość, wysokość).
+<br>Dostarczyć w tej klasie specjalnych metod lączenia pudełek:
+</p>
+<ul>
+<li>
+diagonalnie (zwraca pudełko o rozmiarach równych sumie szerokości i wysokości
+łączonych pudełek) - nazwa metody <b>joinDiagonal(),</b></li><li>
+poziomo (zwraca pudełko o rozmiarach równych sumie szerokości łączonych
+pudełek i wysokości równej maksimum z wysokości pudełek,<br>
+nazwa metody: <b>joinHorizontal()</b></li>
+<li>pionowo (zwraca pudelko o rozmiarach równych sumie wysokości łączonych
+pudełek i szerokości równej maksimum z szerokości pudełek).<br>
+nazwa metody: <b>joinVertical()</b></li>
+</ul>
+<p><br>Przetestować klasę w następujący sposób:
+</p>
+<ul>
+<li>
+użytkownik programu w dialogach wejściowych wprowadza dowolną liczbę szerokości
+pudełek</li><li>
+wysokość tych pudelek równa jest 2*szerokość</li><li>
+wyprowadzić na konsolę wielkość (szerokość, wysokość) każdego z pudełek</li><li>
+połączyć wszystkie otrzymane pudełka w kombinacje odpowiednio: diagonalne, wertyklane i horyzontalne
+i wyprowadzić na konsolę ich rozmiary</li>
+</ul>
+
+<P>Przy pobieraniu danych zadbać o obsługę błędów. Nie stosować tablic.<BR></P>
+<hr width="100%">
+<p><b> </b><br></p>
+<p><br></p>
+
+</body></html>

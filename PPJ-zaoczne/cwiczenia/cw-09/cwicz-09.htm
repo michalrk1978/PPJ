@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en"><html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+   <meta name="Author" content="Krzysztof Barteczko">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (OS/2; U) [Netscape]"><title>Krzysztof Barteczko, WPR - cwicenia z2</title></head><body>
+
+<center><b>Zadania do wykonania</b></center><hr>
+<p><span style="FONT-WEIGHT: bold">ZADANIE-1: Funkcje (8p)<br>
+</span><br>
+Napisz i przetestuj w programie klasę <span style="FONT-WEIGHT: bold">
+Funkcje&nbsp;</span> stanowiącą&nbsp; zaawansowany kalkulator pozwalający na 
+obliczanie wartości funkcji elementarnych</p>
+<p>a)&nbsp;&nbsp;&nbsp; sin(x), cos(x), tg(x), ctg(x), exp(x), ln(x) ...&nbsp;&nbsp;&nbsp;&nbsp; 
+np. sin(2.34),&nbsp; sin(PI/4), ln(1), ln(e)&nbsp; ...</p>
+<p>b)&nbsp;&nbsp; wielomianu dowolnego stopnia ( zaprojektuj wprowadzanie danych 
+dla wielomianu )</p>
+<p>Obliczenia do wykonania powinny być pobierane z okienka dialogowego typu
+<span style="FONT-WEIGHT: bold">InputDialog </span>a wynik działania wypisywany 
+w okienku&nbsp; typu <span style="FONT-WEIGHT: bold">MessageDialog.</span></p>
+<p><b>Uwagi:</b></p>
+<ul>
+	<li>Wykorzystaj funkcjonalność klasy <span style="FONT-WEIGHT: bold">Math, String
+	</span>lub<span style="FONT-WEIGHT: bold"> StringTokenizer</span> </li>
+	<li>Zastosuj <span style="font-weight: 700">tablice, importy statyczne i wyrażenia 
+regularne</span><br>&nbsp;</li>
+</ul>
+<p><b>ZADANIE -2 - Lista dynamiczna&nbsp;dwukierunkowa (12 p.)</b></p>
+<p>Stworzyć klasę <b>Emps, </b>której obiekty będą stanowić elementy listy 
+pracowników.<br>
+Każdy obiekt klasy zawiera trzy elementy: </p>
+<ul>
+	<li>referencję do obiektu klasu <b>Employee </b>(definicja klasy <b>Employee</b> - z poprzednich ćwiczeń), który 
+jest reprezentowany przez dany obiekt (pracownik na liście),&nbsp; </li>
+	<li>referencję do 
+poprzedniego elementu listy (<b>prev</b>) , </li>
+	<li>referencję do następnego elementu 
+listy (<b>next</b>). </li>
+</ul>
+<p>Uwaga: elementy listy są obiektami klasy <b>Emps,</b> a nie
+<b>Employee</b>.</p>
+<p>Lista wygląda tak:</p>
+<p>
+<img height="192" alt="rrr" src="listaRys.jpg" width="665" border="1"><br>
+&nbsp;</p>
+Zwróćmy uwagę, że w przypadku pierwszego elementu na liście wskazanie <b>prev
+</b>ma warość <b>null</b> (nie istnieje poprzedni element), <br>
+a w przypadku ostatniego - wskazanie <b>next </b>ma wartość <b>null </b>(nie 
+istnieje następny element).<br>
+<br>
+Utworzyć klasę <b>List </b>która zawiera referencję do pierwszego i ostatniego 
+elementu listy (obiektu klasy <b>Emps</b>) - do elementów listy dostajemy się 
+przez początek lub koniec.<br>
+<br>
+W klasie <b>List</b> dostarczyć odpowiednich metod:<ul>
+	<li>metody <b>init()</b> tworzącej&nbsp; listę pracowników na podstawie 
+	informacji podawanych w dialogach wejściowych; tworzenie listy kończy się po 
+	wprowadzeniu <b>CANCEL </b></li>
+	<li>metody <b>getSize() </b>podajacej informację o liczbie elementów na 
+	liście </li>
+	<li>metody <b>showForward()</b> i <b>showBackward()</b> wypisujące dane o 
+	pracownikach w kolejności od pierwszego elementuy do ostatniego i odwrotnie, 
+	</li>
+	<li>metodę <b>changeAllSalaries()</b> - zmieniającą pensje wszystkich 
+	pracownikow na liście o podany jako argument procent. </li>
+</ul>
+<p><br>
+<b>Uwaga:</b> nie używać tablic lecz wykorzystać powiązania elementu bieżącego z 
+elementem poprzednim i następnym.</p>
+<br>
+Przetestować wszystkie klasy w metodzie <b>main() </b>zawartej w osobnej klasie 
+.<p>&nbsp;</p>
+<hr><hr>
+<p>
+<br>
+</p>
+</body></html>

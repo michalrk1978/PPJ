@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html; charset=ISO-8859-2"><meta name="author" content="Krzysztof Barteczko"><title>Zadania Java</title></head><body>
+<div align="Center"><b><big>Zadania do wykonania</big></b><br>
+</div>
+<hr width="100%" size="2"><br>
+<b>Zadanie 1 (max. 5 punkty)</b><br>
+<br>
+ Napisać program, który:<br>
+<ul>
+  <li>tworzy i inicjuje z użyciem inicjatora klamrowego tablicę <i><b>ltab</b> </i>liczb całkowitych,</li>
+  <li>wylicza sumę jej elementów o parzystych indeksach,</li>
+  <li>tworzy tablicę łańcuchów znakowych <b>txt</b>, każdy z których składa się z <b><i>l</i></b> powtórzeń litery <i><b>x</b></i>, gdzie <i><b>l</b></i> - kolejny element tablicy <i><b>ltab</b></i>, x kolejna litera, poczynając od 'a'.</li>
+  <li>przestawia miejscami w tablicy txt elementy parzyste i nieparzyste (czyli - uwaga! - pierwszy z drugim, trzeci z czwartym, etc.)</li>
+  <li>wyprowadza na konsolę w kolejnych wierszach kolejne elementy tablicy txt.</li>
+</ul>
+Przykład: <br>
+jeżeli tablica ltab zawiera elementy 2, 5, 3, 1, 7 to sumaParzystych = 12.<br>
+txt jest tablicą o elementach  "aa", "bbbbb", "ccc", "d", "eeeeeee"<br>
+wynik dzialania programu:<br>
+"bbbbb"<br>
+"aa"<br>
+"d"<br>
+"ccc"<br>
+"eeeeeee"<br>
+<br>
+Uwaga: każde z w/w części zadania (oprócz pierwszego) należy oprogramować jako odrębną metodę.<br>
+Zapewnić sprawdzanie błędów<br>
+<hr width="100%" size="2"><b>Zadanie 2 </b>(max. 6 punktów)<br>
+<br>
+Napisać program, który wczytuje napisy podawane przez użytkownika (dopóki
+nie zrezygnuje on z ich wprowadzania), a następnie podaje liczbę wystąpień
+wszystkich wprowadzonych napisów. Np. po wprowadzeniu napisów Aaa, Bbb, Aaa,
+Ccc, Aaa, Bbb powinniśmy otrzymać raport: Aaa 3, Bbb 2, Ccc 1. <br>
+<br>
+W celu zliczania liczby wystąpień takich samych napisów użyć tablicy (koniecznie).<br>
+Spróbować uwzględnić możliwość wystąpienia całkowicie dowolnej liczby napisów.<br>
+Punktacja:<br>
+podstawowa częśc zadania - 2 punkty.<br>
+uwzględnienie dowolnej liczby napisów - dodatkowe 4 punkty.<br>
+<br>
+<hr width="100%" size="2"><b>Zadanie 3 </b>(max. 5 punktów)<br>
+<br>
+Stworzyć klasę Matrix i dostarczyć w niej metod sumowania, odejmowania, mnożenia przez skalar i mnożenia macierzy
+oraz wyliczania sum wierszowych i kolumnowych oraz sumy elementów całej macierzy.
+<br>
+Przetestować klasę dla następujących operacji na macierzach:<br>
+<br>
+           2     3                                                              1<br>
+ A  =    1     7      B =   1 8 2       x = [ 1  2  3 ]     y =    2      q = 3<br>
+           3.1  2               2 2 2                                        3<br>
+<br>
+C = 2 2 2<br>
+       2 2 2<br>
+<br>
+operacje:<br>
+A+B,  B+C, AB, BC, Ax, Bx, Ay,  By, xy, yx,  qA, qx, suma kolumnowa, wierszowa i wszystkich elementów A, B, x, y. <br>
+<br>
+Uwaga: z operacjami na macierzach można zapoznać się w dowolnym elementarnym
+podręczniku podstaw matematyki (nie mówiąc już o algebrze liniowej) dla dowolnego
+kierunku studiów.<br><br>
+<hr width="100%" size="2"><br>
+<b>Zadanie 4 (</b>max. 8 punktów)<br>
+<br>
+Mamy półki. Każda półka ma swoją nazwę i rozmiar (liczbę książek, które może pomieścić) <br>
+Mamy książki. Opis książki: autor, tytuł. <br>
+Inicjalnie każda książka jest poza jakąkolwiek półką ("luzem"). <br>
+Można ją wstawić na wybraną półkę, albo zdjąć z półki, na której się znajduje. <br>
+<br>
+Napisać program, który manipuluje N książkami i M pólkami <br>
+wstawiając je na półki i przestawiając.<br>
+<br>
+Dla każdej książki należy umożliwić uzyskanie info o książce, zawierającej Autora i Tytuł. <br>
+Oprócz tego o każdej książce  powinniśmy móc się dowiedzieć gdzie się akurat znajduje (nazwa półki lub "luzem"). <br>
+Dla każdej półki należy umożliwić uzyskanie info w postaci: <br>
+Nazwa półki <br>
+--------------- <br>
+lista książek <br>
+<br>
+W programie pokazać efekty wstawiania i przestawiania książek  w postaci wyprowadzania informacji o książkach i o półkach. <br>
+<br><hr>
+<p><b>Zadanie 5 (8p) - Tabele ocen studentów</b>&nbsp;</p>
+<p>Zdefiniuj i przetestuj w programie klasę <b>Student</b> reprezentującą tabelę 
+ocen z różnych przedmiotów dla danego studenta:</p>
+<table id="table1" cellSpacing="0" cellPadding="0" width="21%" border="1">
+	<tr>
+		<td width="10%">&nbsp;</td>
+		<td width="13%">zaliczenie</td>
+		<td width="77%">&nbsp;egzamin</td>
+	</tr>
+	<tr>
+		<td width="10%">ANG</td>
+		<td width="13%">&nbsp;3.0</td>
+		<td width="77%">&nbsp;?</td>
+	</tr>
+	<tr>
+		<td width="10%">MAD</td>
+		<td width="13%">&nbsp;4.5</td>
+		<td width="77%">3.0</td>
+	</tr>
+	<tr>
+		<td width="10%">PRG1</td>
+		<td width="13%">&nbsp;3.5</td>
+		<td width="77%">?</td>
+	</tr>
+	<tr>
+		<td width="10%">ALG</td>
+		<td width="13%">&nbsp;4.0</td>
+		<td width="77%">3.5</td>
+	</tr>
+</table>
+<p>Dane do tabeli powinny być wprowadzane z okienek dialogowych lub z konsoli z obsługą błędów 
+.</p>
+<p>Zastosuj tablicę dwuwymiarową i wymyśl sposób wypełnienia tabeli jeżeli z 
+danego przedmiotu nie było egzaminu.</p>
+<p>W klasie&nbsp; <b>Student&nbsp;</b> zdefiniuj nastepujące metody:</p>
+<p><b>min()</b> //podaje najniższą ocenę w tabeli</p>
+<p><b>max()</b> //podaje najwyższą ocenę w tabeli</p>
+<p><b>sred() </b>//oblicza średnią arytmetyczną ocen w tabeli&nbsp;</p>
+<p><b>minZal()</b> // podaje najniższą ocenę zaliczenia&nbsp;</p>
+<p><b>maxZal()</b> //podaje najwyższą ocenę zaliczenia&nbsp;</p>
+<p><b>minEgz()</b> //podaje najniższą ocenę z egzaminu</p>
+<p><b>maxEgz() </b>//podaje najwyższą ocenę z egzaminu&nbsp;</p>
+<p><b>sredZal()</b> //oblicza średnią arytmetyczną ocen z zaliczeń&nbsp;</p>
+<p><b>sredEgz()</b> //oblicza średnią arytmetyczną ocen z egzaminów&nbsp;&nbsp;<br>
+&nbsp;</p>
+<p><b>Rozważ możliwość zastosowania tablicy lub innej struktury danych do 
+przechowywania obiektów klasy Student.</b></p>
+</body></html>
