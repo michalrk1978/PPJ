@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>zadanie6</label>
+		<id>258</id>
+		<version>0</version>
+	</settings>
+	<users>
+		<user>
+			<path>zadanie6.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>zadanie6.jcp</path>
+		</project>
+		<project>
+			<path>zadanie6c\zadanie6c.jcp</path>
+		</project>
+	</projects>
+</workspace>

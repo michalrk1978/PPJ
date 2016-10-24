@@ -1,0 +1,3 @@
+D:\pjwstk\PPJ\zadanie6\src\Kolor.java
+D:\pjwstk\PPJ\zadanie6\src\Punkt3D.java
+D:\pjwstk\PPJ\zadanie6\src\Zadanie6b.java
