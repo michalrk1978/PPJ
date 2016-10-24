@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<settings>
+		<label>zadanie3s78</label>
+		<root_path>\</root_path>
+		<output_path>classes\</output_path>
+		<source_path>src\</source_path>
+		<jdkprofile_ref>JDK version 1.6.0_26</jdkprofile_ref>
+		<compiler_ref/>
+		<ant_ref/>
+	</settings>
+	<ant_events/>
+	<run_items/>
+	<runtimes>
+		<runtime>
+			<label>&lt;Default&gt;</label>
+			<application_ref/>
+			<applet_ref/>
+			<debugger_ref/>
+			<param/>
+			<run>zadanie3s78.testMatrix</run>
+			<verify>true</verify>
+		</runtime>
+	</runtimes>
+	<libraries/>
+	<files>
+		<include>
+			<folderitem>
+				<path>src</path>
+			</folderitem>
+			<folderitem>
+				<path>src\zadanie3s78</path>
+			</folderitem>
+			<fileitem>
+				<path>src\zadanie3s78\Matrix.java</path>
+				<folder>src\zadanie3s78</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\zadanie3s78\testMatrix.java</path>
+				<folder>src\zadanie3s78</folder>
+			</fileitem>
+		</include>
+	</files>
+	<tasks/>
+</project>

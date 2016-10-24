@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace_user>
+	<active_project>
+		<label>zadanie3s78</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>zadania56</label>
+			<showfiles>false</showfiles>
+		</project>
+		<project>
+			<label>zadanie3s78</label>
+			<showfiles>false</showfiles>
+			<folderitem>
+				<path>..\..\zadania78\zadanie3s78\classes</path>
+				<dir>classes</dir>
+			</folderitem>
+			<folderitem>
+				<path>..\..\zadania78\zadanie3s78\classes\.data</path>
+				<dir>classes\.data</dir>
+			</folderitem>
+			<folderitem>
+				<path>..\..\zadania78\zadanie3s78\classes\zadanie3s78</path>
+				<dir>classes\zadanie3s78</dir>
+			</folderitem>
+			<folderitem>
+				<path>..\..\zadania78\zadanie3s78\src</path>
+				<dir>src</dir>
+			</folderitem>
+			<folderitem>
+				<path>..\..\zadania78\zadanie3s78\src\zadanie3s78</path>
+				<dir>src\zadanie3s78</dir>
+			</folderitem>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>..\..\zadania78\zadanie3s78\src\zadanie3s78\Matrix.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>..\..\zadania78\zadanie3s78\src\zadanie3s78\testMatrix.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>
